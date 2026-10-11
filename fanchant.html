@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 EUNHYUK FANCON [be:WARE of the RABBIT] in TAIPEI ・ 應援指南</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Allura&family=Great+Vibes&family=Oswald:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DE7SSNSKJ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DE7SSNSKJ9');
+</script>
+
+<style>
+  :root{
+    --bg-deep:#3d1e14;
+    --bg-mid:#5a2d1f;
+    --bg-light:#7a3f2d;
+    --bg-glow:#9b4f36;
+    --accent:#d4e956;
+    --accent-soft:#e2f082;
+    --accent-dim:#a8bc44;
+    --red:#c92a2a;
+    --red-tape:#f5c518;
+    --white:#f5efe6;
+    --cream:#e8ddc9;
+    --gray:#b8a692;
+    --line:rgba(212,233,86,.3);
+    --line-dim:rgba(245,239,230,.18);
+    --c-vocal:#ff9966;
+    --c-cheer:#d4e956;
+    --c-kor:#f5efe6;
+    --c-hint:#e8ddc9;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+
+  body{
+    font-family:'Noto Sans TC',sans-serif;
+    background:var(--bg-deep);
+    color:var(--white);
+    line-height:1.75;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+    min-height:100vh;
+  }
+
+  body::before{
+    content:'';
+    position:fixed;inset:0;
+    background:
+      radial-gradient(ellipse 1200px 800px at 50% 30%, var(--bg-glow), transparent 60%),
+      radial-gradient(ellipse 800px 600px at 10% 90%, rgba(201,42,42,.15), transparent 55%),
+      linear-gradient(170deg, var(--bg-deep) 0%, var(--bg-mid) 40%, var(--bg-deep) 100%);
+    pointer-events:none;z-index:0;
+  }
+  body::after{
+    content:'';
+    position:fixed;inset:0;
+    background-image:
+      radial-gradient(circle 1px at 50% 50%, rgba(0,0,0,.08) 1px, transparent 1px);
+    background-size:4px 4px;
+    pointer-events:none;z-index:1;
+  }
+
+  .red-dots{
+    position:fixed;inset:0;pointer-events:none;z-index:2;
+  }
+  .red-dots span{
+    position:absolute;
+    width:10px;height:10px;
+    border-radius:50%;
+    background:var(--red);
+    opacity:.65;
+    filter:blur(.5px);
+  }
+  .red-dots span:nth-child(1){top:8%;left:62%;width:12px;height:12px}
+  .red-dots span:nth-child(2){top:18%;left:85%;width:8px;height:8px}
+  .red-dots span:nth-child(3){top:32%;left:12%;width:14px;height:14px}
+  .red-dots span:nth-child(4){top:48%;left:92%;width:9px;height:9px}
+  .red-dots span:nth-child(5){top:65%;left:20%;width:11px;height:11px;opacity:.5}
+  .red-dots span:nth-child(6){top:78%;left:70%;width:13px;height:13px;opacity:.55}
+  .red-dots span:nth-child(7){top:88%;left:10%;width:10px;height:10px}
+
+  .danger-tape{
+    position:absolute;
+    background:repeating-linear-gradient(
+      -45deg,
+      var(--red-tape) 0 20px,
+      #1a1a1a 20px 24px,
+      var(--red-tape) 24px 44px
+    );
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:6px 20px;
+    font-family:'Oswald',sans-serif;
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:.3em;
+    color:#1a1a1a;
+    box-shadow:0 4px 20px rgba(0,0,0,.4);
+    z-index:3;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  .danger-top-left{
+    top:30px;left:-80px;
+    transform:rotate(-28deg);
+    width:380px;
+  }
+  .danger-top-right{
+    top:50px;right:-80px;
+    transform:rotate(32deg);
+    width:360px;
+  }
+  .danger-bottom-left{
+    bottom:120px;left:-100px;
+    transform:rotate(28deg);
+    width:360px;
+    opacity:.85;
+  }
+
+  .hero{
+    position:relative;z-index:4;
+    padding:24px 24px 40px;
+    max-width:1200px;
+    margin:0 auto;
+    text-align:center;
+    overflow:hidden;
+  }
+
+  .top-info{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:32px;
+    padding-bottom:20px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:24px;
+    font-family:'Space Mono',monospace;
+    font-size:11.5px;
+    letter-spacing:.12em;
+    color:var(--white);
+    text-transform:uppercase;
+    flex-wrap:wrap;
+    font-weight:500;
+  }
+  .top-info-left{line-height:1.7;text-align:center}
+  .top-info-right{text-align:center;color:var(--accent);line-height:1.7;font-weight:700}
+  .top-info-right::before{content:'>>> >>>  '}
+
+  .meta-block{
+    display:flex;
+    justify-content:center;
+    gap:32px;
+    padding:16px 0;
+    align-items:end;
+    border-bottom:1px solid var(--line);
+    margin-bottom:24px;
+    flex-wrap:wrap;
+  }
+  .meta-date{
+    font-family:'Space Mono',monospace;
+    font-size:12.5px;
+    letter-spacing:.18em;
+    color:var(--accent);
+    text-transform:uppercase;
+    line-height:1.5;
+    text-align:center;
+    font-weight:700;
+  }
+  .meta-date .location{
+    display:block;
+    color:var(--white);
+    margin-top:4px;
+    font-weight:500;
+  }
+  .meta-id{
+    font-family:'Space Mono',monospace;
+    font-size:12px;
+    letter-spacing:.15em;
+    color:var(--white);
+    text-align:center;
+    font-weight:700;
+  }
+  .meta-id .target{color:var(--accent);font-weight:700;margin-left:6px}
+
+  h1.hero-title{
+    font-family:'Anton','Oswald',sans-serif;
+    font-size:clamp(40px, 8vw, 108px);
+    line-height:.92;
+    letter-spacing:-.015em;
+    color:var(--accent);
+    margin:24px 0 24px;
+    text-transform:uppercase;
+    position:relative;
+    display:inline-block;
+    font-weight:400;
+    filter:drop-shadow(0 0 16px rgba(212,233,86,.35));
+  }
+
+  .hero-tagline{
+    font-family:'Space Mono',monospace;
+    font-size:12.5px;
+    letter-spacing:.15em;
+    color:var(--accent);
+    text-transform:uppercase;
+    line-height:1.8;
+    padding-top:24px;
+    border-top:1px solid var(--line);
+    text-align:center;
+    font-weight:700;
+    margin-top:16px;
+  }
+  .hero-tagline .white{color:var(--white);font-weight:500}
+
+  .note{
+    max-width:860px;
+    text-align:left;
+    font-size:13px;
+    color:var(--cream);
+    padding:18px 22px;
+    background:rgba(212,233,86,.08);
+    border:1px solid var(--line);
+    border-left:2px solid var(--accent);
+    margin:36px auto 0;
+    line-height:1.9;
+  }
+  .note strong{color:var(--accent);font-weight:700}
+
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(61,30,20,.92);
+    backdrop-filter:blur(16px);
+    border-top:1.5px solid var(--accent);
+    border-bottom:1.5px solid var(--accent);
+    padding:14px 0;
+  }
+  .nav-inner{
+    display:flex;gap:10px;justify-content:center;
+    padding:0 24px;
+    max-width:900px;margin:0 auto;
+    flex-wrap:wrap;
+  }
+  .nav-btn{
+    flex:0 0 auto;
+    background:transparent;
+    border:1.5px solid var(--accent);
+    color:var(--accent);
+    padding:10px 22px;
+    font-family:'Noto Sans TC','Oswald',sans-serif;
+    font-size:13.5px;
+    font-weight:700;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    border-radius:0;
+    cursor:pointer;
+    transition:all .2s ease;
+    white-space:nowrap;
+  }
+  .nav-btn:hover{background:var(--accent);color:var(--bg-deep)}
+  .nav-btn.active{
+    background:var(--accent);
+    border-color:var(--accent);
+    color:var(--bg-deep);
+    box-shadow:0 0 16px rgba(212,233,86,.4);
+  }
+
+  main{
+    position:relative;z-index:4;
+    max-width:860px;
+    margin:0 auto;
+    padding:48px 24px 120px;
+  }
+  .section{display:none;animation:fadeIn .5s ease}
+  .section.active{display:block}
+  @keyframes fadeIn{
+    from{opacity:0;transform:translateY(20px)}
+    to{opacity:1;transform:translateY(0)}
+  }
+
+  .section-header{
+    margin-bottom:24px;
+    padding-bottom:18px;
+    border-bottom:1px solid var(--line-dim);
+    text-align:center;
+  }
+  .section-date{
+    font-family:'Space Mono',monospace;
+    font-size:13px;
+    letter-spacing:.18em;
+    color:var(--accent);
+    text-transform:uppercase;
+    margin-bottom:8px;
+    font-weight:700;
+  }
+  .section-date .weekday{color:var(--cream);margin-left:6px}
+  .section-title{
+    font-family:'Anton','Oswald',sans-serif;
+    font-size:clamp(48px, 10vw, 92px);
+    line-height:.95;
+    letter-spacing:-.01em;
+    color:var(--accent);
+    text-transform:uppercase;
+    font-weight:400;
+    filter:drop-shadow(0 0 12px rgba(212,233,86,.3));
+  }
+  .section-sub{
+    font-family:'Noto Sans TC','Oswald',sans-serif;
+    font-size:14px;
+    color:var(--accent-soft);
+    margin-top:10px;
+    font-weight:600;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+  }
+
+  .info-block{
+    background:rgba(212,233,86,.07);
+    border:1px solid var(--line);
+    border-left:2px solid var(--accent);
+    padding:16px 20px;
+    margin-bottom:24px;
+    font-size:14px;
+    color:var(--cream);
+    line-height:1.9;
+  }
+  .info-block .info-row{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+  }
+  .info-block .info-row + .info-row{margin-top:6px}
+  .info-block strong{
+    color:var(--accent);
+    font-weight:700;
+    min-width:80px;
+    flex-shrink:0;
+  }
+
+  .video-section{
+    margin-bottom:28px;
+    background:rgba(212,233,86,.05);
+    border:1px solid var(--line);
+    padding:14px;
+    position:relative;
+  }
+  .video-section::before{
+    content:'+';
+    position:absolute;
+    top:6px;left:6px;
+    font-family:'Space Mono',monospace;
+    color:var(--accent);
+    font-size:14px;line-height:1;
+  }
+  .video-section::after{
+    content:'+';
+    position:absolute;
+    bottom:6px;right:6px;
+    font-family:'Space Mono',monospace;
+    color:var(--accent);
+    font-size:14px;line-height:1;
+  }
+  .video-label-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:12px;
+    padding-left:8px;
+    color:var(--accent);
+    font-family:'Oswald','Noto Sans TC',sans-serif;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+  }
+  .video-icon{color:var(--accent);font-size:12px}
+  .video-iframe-wrap{
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%;
+    background:#000;
+    overflow:hidden;
+  }
+  .video-iframe-wrap iframe{
+    position:absolute;top:0;left:0;
+    width:100%;height:100%;border:none;
+  }
+
+  .legend{
+    display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:16px;
+    margin:0 auto 20px;
+    padding:14px 18px;
+    background:rgba(212,233,86,.06);
+    border:1px solid var(--line);
+  }
+  .legend-title{
+    width:100%;
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    color:var(--accent);
+    text-align:center;
+    margin-bottom:4px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    font-weight:700;
+  }
+  .legend-title::before{content:'[ '}
+  .legend-title::after{content:' ]'}
+  .legend-item{
+    display:flex;align-items:center;gap:8px;
+    font-size:12px;
+    color:var(--cream);
+    letter-spacing:.05em;
+  }
+  .legend-dot{
+    width:10px;height:10px;
+    box-shadow:0 0 6px currentColor;
+  }
+  .legend-item.kor .legend-dot{background:var(--c-kor);color:var(--c-kor)}
+  .legend-item.vocal .legend-dot{background:var(--c-vocal);color:var(--c-vocal)}
+  .legend-item.cheer .legend-dot{background:var(--c-cheer);color:var(--c-cheer)}
+
+  .lyrics{
+    font-size:15.5px;
+    line-height:1.95;
+    color:var(--white);
+  }
+  .stanza{
+    padding:20px 22px;
+    margin-bottom:14px;
+    background:rgba(212,233,86,.05);
+    border:1px solid var(--line);
+    border-left:2px solid var(--accent);
+  }
+  .stanza:hover{background:rgba(212,233,86,.09)}
+  .kor-line{
+    display:block;
+    color:var(--white);
+    margin-top:8px;
+  }
+  .kor-line:first-child{margin-top:0}
+  .hint{
+    display:block;
+    color:var(--c-hint);
+    font-size:13.5px;
+    letter-spacing:.02em;
+    font-weight:300;
+    margin-top:2px;
+  }
+  .vocal{color:var(--c-vocal);font-weight:600}
+  .cheer{color:var(--c-cheer);font-weight:700}
+
+  .chant-group{
+    padding:28px 24px;
+    background:rgba(212,233,86,.08);
+    border:1.5px solid var(--accent);
+    position:relative;
+    text-align:center;
+    margin-bottom:14px;
+  }
+  .chant-group::before,.chant-group::after{
+    content:'+';
+    position:absolute;
+    font-family:'Space Mono',monospace;
+    color:var(--accent);
+    font-size:16px;line-height:1;
+  }
+  .chant-group::before{top:8px;left:8px}
+  .chant-group::after{bottom:8px;right:8px}
+  .chant-group-label{
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    color:var(--accent);
+    letter-spacing:.3em;
+    text-transform:uppercase;
+    margin-bottom:20px;
+    padding-bottom:10px;
+    border-bottom:1px dashed var(--line);
+    font-weight:700;
+  }
+  .chant-group-label::before{content:'[ '}
+  .chant-group-label::after{content:' ]'}
+  .chant-line{
+    padding:14px 0;
+  }
+  .chant-line + .chant-line{
+    border-top:1px dashed var(--line);
+  }
+  .chant-kor{
+    font-family:'Noto Sans TC',sans-serif;
+    font-size:22px;
+    color:var(--accent);
+    font-weight:700;
+    letter-spacing:.05em;
+    margin-bottom:6px;
+  }
+  .chant-hint{
+    font-size:15px;
+    color:var(--cream);
+    letter-spacing:.08em;
+  }
+
+  footer{
+    position:relative;z-index:4;
+    text-align:center;
+    padding:40px 24px 32px;
+    border-top:1px solid var(--line-dim);
+    color:var(--cream);
+    font-family:'Space Mono',monospace;
+    font-size:11.5px;
+    line-height:2;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    font-weight:500;
+  }
+  footer .bracket{
+    color:var(--accent);
+    font-family:'Anton',sans-serif;
+    font-size:14px;
+    letter-spacing:.2em;
+    display:block;
+    margin-bottom:6px;
+    font-weight:400;
+  }
+
+  .top-btn{
+    position:fixed;
+    bottom:24px;right:24px;
+    width:44px;height:44px;
+    border-radius:0;
+    background:var(--accent);
+    border:1.5px solid var(--accent);
+    color:var(--bg-deep);
+    font-family:'Space Mono',monospace;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    z-index:60;
+    display:none;
+    align-items:center;justify-content:center;
+    box-shadow:0 0 20px rgba(212,233,86,.5);
+    transition:all .2s ease;
+  }
+  .top-btn:hover{
+    background:var(--accent-soft);
+    box-shadow:0 0 20px rgba(212,233,86,.8);
+  }
+  .top-btn.show{display:flex}
+
+  @media (max-width:720px){
+    .hero{padding:30px 20px 50px;min-height:50vh}
+    .fancon-tag{font-size:11px;margin-bottom:24px}
+    .hero-title-group{
+      grid-template-columns:1fr;
+      gap:16px;
+      margin-bottom:32px;
+    }
+    .hero-left{font-size:11px}
+    .hero-left .be-mark{margin-bottom:8px}
+    .hero-left .dates{font-size:12px}
+    .hero-left .wanted{font-size:10.5px;margin-top:14px}
+    .main-title{font-size:clamp(60px, 16vw, 110px)}
+    .script-small{font-size:clamp(22px, 7vw, 36px)}
+    .danger-tape{font-size:11px;padding:5px 14px}
+    .danger-top-left{width:260px;top:14px;left:-50px}
+    .danger-top-right{width:240px;top:20px;right:-50px}
+    .danger-bottom-left{display:none}
+    .team-tag{bottom:14px;right:20px;font-size:10px}
+    .team-tag .en{font-size:11px}
+    .team-tag .zh{font-size:9px}
+    main{padding:32px 18px 100px}
+    .section-title{filter:none}
+    .lyrics{font-size:14.5px}
+    .stanza{padding:16px 18px}
+    .hint{font-size:12.5px}
+    .chant-big .kor-big{font-size:19px}
+    .chant-big .hint-big{font-size:14px}
+    .nav-inner{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:6px;
+      padding:0 12px;
+    }
+    .nav-btn{padding:9px 4px;font-size:11.5px;width:100%;text-align:center;letter-spacing:.03em}
+    .btn-row-inner{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}
+    .btn{padding:10px 8px;font-size:12px}
+    .red-dots span{display:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="red-dots">
+  <span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span>
+</div>
+
+<section class="hero">
+  <div class="danger-tape danger-top-left">DANGER&nbsp;&nbsp;&nbsp;DANGER&nbsp;&nbsp;&nbsp;DANGER</div>
+  <div class="danger-tape danger-top-right">DANGER&nbsp;&nbsp;&nbsp;DANGER&nbsp;&nbsp;&nbsp;DANGER</div>
+
+  <div class="top-info">
+    <div class="top-info-left">
+      2026 EUNHYUK FANCON<br>
+      EUNHYUK UNION.TW ・ 銀赫台灣聯合應援團隊
+    </div>
+    <div class="top-info-right">
+      OCT 16TH–17TH, 2026<br>
+      IN TAIPEI
+    </div>
+  </div>
+
+  <h1 class="hero-title">BE:WARE OF THE RABBIT</h1>
+
+  <div class="hero-tagline">
+    ! WANTED !&nbsp;&nbsp;・&nbsp;&nbsp;REWARD $19860404
+  </div>
+
+  <div class="note">
+    🐰 <strong>注意事項</strong>　本頁所有應援口號、歌詞、教學影片均轉載自網路公開資源，著作權皆屬原作者及版權方所有。本頁僅作為粉絲應援用途整理，<strong>非商業使用</strong>。
+  </div>
+</section>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <button class="nav-btn active" data-target="chant">應援口號 ・ UP N DOWN</button>
+    <button class="nav-btn" data-target="day-1">安可 DAY 1 ・ 10/16</button>
+    <button class="nav-btn" data-target="day-2">安可 DAY 2 ・ 10/17</button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ 應援口號 UP N DOWN ============ -->
+  <article class="section active" id="chant">
+    <div class="section-header">
+      <div class="section-date">應援口號 ・ FANCHANT</div>
+      <h1 class="section-title">UP N DOWN</h1>
+    </div>
+
+    <div class="video-section">
+      <div class="video-label-row">
+        <span class="video-icon">▶</span>
+        <span>UP N DOWN ・ MV / PRACTICE</span>
+      </div>
+      <div class="video-iframe-wrap">
+        <iframe data-src="https://www.youtube.com/embed/3rfLDlDOcn8" title="UP N DOWN" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-title">Color Guide ・ 顏色說明</div>
+      <div class="legend-item kor"><span class="legend-dot"></span><span>韓文歌詞</span></div>
+      <div class="legend-item vocal"><span class="legend-dot"></span><span>跟唱 Sing-along</span></div>
+      <div class="legend-item cheer"><span class="legend-dot"></span><span>應援詞 Fanchant</span></div>
+    </div>
+
+    <div class="lyrics">
+      <p class="stanza">
+        <span class="kor-line">One, two, three, four</span>
+        <span class="kor-line">Get up, <span class="vocal">get down</span>, 들썩이는 리듬 위</span>
+        <span class="kor-line">Go up <span class="vocal">and down</span>, 널 맡겨봐 like a wave</span>
+        <span class="kor-line">Get up, <span class="vocal">get down</span>, 들썩이는 이 밤에</span>
+        <span class="kor-line">Go up <span class="vocal">and down</span>, 툭 털어내 all that stress (break it down)</span>
+      </p>
+
+      <p class="stanza">
+        <span class="kor-line">Come on, I got a plan (uh), bet you wanna like this (uh-huh)</span>
+        <span class="kor-line">Volume up해, <span class="vocal">boom, boom</span> 뛰는 heart beat</span>
+        <span class="kor-line">살짝 입꼬리를 땡겨, right?</span>
+        <span class="kor-line">Jump up, jump up, let's get down</span>
+      </p>
+
+      <p class="stanza">
+        <span class="kor-line">Don't worry, <span class="vocal">it's your birthday</span> (birthday)</span>
+        <span class="kor-line">고삐를 풀어 like <span class="vocal">it's your birthday</span> (birthday)</span>
+        <span class="kor-line">We go up-up, down, up-up down</span>
+        <span class="kor-line">자유로운 step, I'm alive</span>
+      </p>
+
+      <p class="stanza">
+        <span class="kor-line">Dancing in slo-mo, just what I like it (I like it)</span>
+        <span class="kor-line">복잡할 필욘 없는 걸</span>
+        <span class="kor-line">단순한 move, here with you <span class="cheer">【Lee Hyuk Jae】</span></span>
+        <span class="kor-line">고민은 날려 (what?) More <span class="cheer">【UP N DOWN】</span></span>
+      </p>
+
+      <p class="stanza">
+        <span class="kor-line">Get up, <span class="vocal">get down</span>, 들썩이는 리듬 위</span>
+        <span class="kor-line">Go up <span class="vocal">and down</span>, 널 맡겨봐 like a wave</span>
+        <span class="kor-line">Get up, <span class="vocal">get down</span>, 들썩이는 이 밤에</span>
+        <span class="kor-line">Go up <span class="vocal">and down</span>, 툭 털어내 all that stress (break it down)</span>
+      </p>
+
+      <p class="stanza">
+        <span class="kor-line">미루다가는 <span class="vocal">so late</span>, <span class="vocal">let's play</span>, 이 밤이 후회 없게 (없게)</span>
+        <span class="kor-line">머릿속에 소음들은 다 꺼둔 채, 리듬으로 너를 채워 그냥 즐기면 돼</span>
+        <span class="kor-line">조명이 널 <span class="vocal">비출 때</span>, 네 맘을 채운 빛 다른건 다 <span class="vocal">fade away</span></span>
+        <span class="kor-line">무겁게 짓누른 생각들을 떨쳐낼 때, 더 가벼워진 move, oh, yeah</span>
+      </p>
+
+      <p class="stanza">
+        <span class="kor-line">Dancing in slo-mo, just what I like it (I like it)</span>
+        <span class="kor-line">심각할 필욘 없는 걸</span>
+        <span class="kor-line">가벼운 move, here with you <span class="cheer">【Lee Hyuk Jae】</span></span>
+        <span class="kor-line">더 자유로워 (what?) More <span class="cheer">【UP N DOWN】</span></span>
+      </p>
+
+      <p class="stanza">
+        <span class="kor-line">Get up, <span class="vocal">get down</span>, 들썩이는 리듬 위</span>
+        <span class="kor-line">Go up <span class="vocal">and down</span>, 널 맡겨봐 like a wave</span>
+        <span class="kor-line">Get up, <span class="vocal">get down</span>, 들썩이는 이 밤에</span>
+        <span class="kor-line">Go up <span class="vocal">and down</span>, 툭 털어내 all that stress</span>
+      </p>
+
+      <p class="stanza">
+        <span class="kor-line">Dance on my wave, 더 이상 I don't think 'bout that ('bout that)</span>
+        <span class="kor-line">You know we have no time to waste (hah)</span>
+        <span class="kor-line"><span class="vocal">One, two, three, four</span>, 그냥 다 흐르게 둬</span>
+        <span class="kor-line">내일은 걱정 마, 지금 이 순간 아무 생각 안 들도록</span>
+      </p>
+
+      <p class="stanza">
+        <span class="kor-line">Get up, <span class="vocal">get down</span>, 들썩이는 리듬 위</span>
+        <span class="kor-line">Go up <span class="vocal">and down</span>, 널 맡겨봐 like a wave</span>
+        <span class="kor-line">Get up, <span class="vocal">get down</span>, 들썩이는 이 밤에</span>
+        <span class="kor-line">Go up <span class="vocal">and down</span>, 툭 털어내 all that stress (break it down)</span>
+      </p>
+
+      <p class="stanza">
+        <span class="kor-line"><span class="cheer">【Lee Hyuk Jae、Lee Hyuk Jae、Lee Hyuk Jae、Lee Hyuk Jae】</span></span>
+        <span class="kor-line"><span class="cheer">【Lee Hyuk Jae、Lee Hyuk Jae、SOLO DEBUT、UP N DOWN】</span></span>
+      </p>
+    </div>
+  </article>
+
+  <!-- ============ DAY 1 10/16 ============ -->
+  <article class="section" id="day-1">
+    <div class="section-header">
+      <div class="section-date">安可應援 ・ ENCORE</div>
+      <h1 class="section-title">DAY 1</h1>
+      <div class="section-sub">10 / 16 FRI</div>
+    </div>
+
+    <div class="info-block">
+      <div class="info-row"><strong>執行時間</strong><span>《UP N DOWN》結束後至安可表演開始</span></div>
+      <div class="info-row"><strong>執行區域</strong><span>全場</span></div>
+      <div class="info-row"><strong>執行說明</strong><span>請留意現場哨音提示，聽到哨音後，開始持續呼喊以下口號</span></div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-title">Color Guide ・ 顏色說明</div>
+      <div class="legend-item kor"><span class="legend-dot"></span><span>韓文口號</span></div>
+      <div class="legend-item cheer"><span class="legend-dot"></span><span>應援詞</span></div>
+    </div>
+
+    <div class="chant-group">
+      <div class="chant-group-label">依序持續呼喊</div>
+      <div class="chant-line">
+        <div class="chant-kor"><span class="cheer">Lee Hyuk Jae</span>　좋아해</div>
+        <div class="chant-hint"><span class="cheer">Lee Hyuk Jae</span>　秋 哇 嘿</div>
+      </div>
+      <div class="chant-line">
+        <div class="chant-kor"><span class="cheer">Lee Hyuk Jae</span>　사랑해</div>
+        <div class="chant-hint"><span class="cheer">Lee Hyuk Jae</span>　撒 浪 嘿</div>
+      </div>
+      <div class="chant-line">
+        <div class="chant-kor"><span class="cheer">Lee Hyuk Jae</span>　빨리해</div>
+        <div class="chant-hint"><span class="cheer">Lee Hyuk Jae</span>　八 哩 嘿</div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ============ DAY 2 10/17 ============ -->
+  <article class="section" id="day-2">
+    <div class="section-header">
+      <div class="section-date">安可應援 ・ ENCORE</div>
+      <h1 class="section-title">DAY 2</h1>
+      <div class="section-sub">10 / 17 SAT ・ SAY MY NAME</div>
+    </div>
+
+    <div class="info-block">
+      <div class="info-row"><strong>執行時間</strong><span>《UP N DOWN》結束後至安可表演開始</span></div>
+      <div class="info-row"><strong>執行區域</strong><span>全場</span></div>
+      <div class="info-row"><strong>執行說明</strong><span>一起合唱《Say my name》副歌，請注意聆聽哨音，哨音提示後開始</span></div>
+    </div>
+
+    <div class="video-section">
+      <div class="video-label-row">
+        <span class="video-icon">▶</span>
+        <span>Say my name ・ 練習影片</span>
+      </div>
+      <div class="video-iframe-wrap">
+        <iframe data-src="https://www.youtube.com/embed/pzSA0gf6-bM" title="Say my name" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-title">Color Guide ・ 顏色說明</div>
+      <div class="legend-item kor"><span class="legend-dot"></span><span>韓文歌詞</span></div>
+      <div class="legend-item cheer"><span class="legend-dot"></span><span>應援句</span></div>
+    </div>
+
+    <div class="lyrics">
+      <p class="stanza">
+        <span class="kor-line">자체발광 보석미남 Say my name <span class="cheer">（Lee Hyuk Jae）</span></span>
+        <span class="hint">加切巴光 波搜咪男 Say my name <span class="cheer">（Lee Hyuk Jae）</span></span>
+        <span class="kor-line">자체발광 보석미남 Say my name <span class="cheer">（Lee Hyuk Jae）</span></span>
+        <span class="hint">加切巴光 波搜咪男 Say my name <span class="cheer">（Lee Hyuk Jae）</span></span>
+      </p>
+
+      <p class="stanza">
+        <span class="kor-line">자체발광 보석미남 Say my name <span class="cheer">（Lee Hyuk Jae）</span></span>
+        <span class="hint">加切巴光 波搜咪男 Say my name <span class="cheer">（Lee Hyuk Jae）</span></span>
+        <span class="kor-line">자체발광 보석미남 Say my name <span class="cheer">（Lee Hyuk Jae）</span></span>
+        <span class="hint">加切巴光 波搜咪男 Say my name <span class="cheer">（Lee Hyuk Jae）</span></span>
+      </p>
+    </div>
+  </article>
+
+</main>
+
+<button class="top-btn" id="topBtn" aria-label="回頂部">↑</button>
+
+<footer>
+  <div class="bracket">2026 EUNHYUK FANCON [be:WARE of the RABBIT] in TAIPEI</div>
+  EUNHYUK UNION.TW ・ 銀赫台灣聯合應援團隊
+</footer>
+
+<script>
+  function loadVideosInSection(el){
+    if(!el) return;
+    el.querySelectorAll('iframe[data-src]').forEach(iframe => {
+      iframe.src = iframe.dataset.src;
+      iframe.removeAttribute('data-src');
+    });
+  }
+  function unloadVideosInSection(el){
+    if(!el) return;
+    el.querySelectorAll('iframe[src]').forEach(iframe => {
+      iframe.dataset.src = iframe.src;
+      iframe.removeAttribute('src');
+    });
+  }
+
+  const buttons = document.querySelectorAll('.nav-btn');
+  const sections = document.querySelectorAll('.section');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      sections.forEach(s => {
+        if(s.classList.contains('active')) unloadVideosInSection(s);
+        s.classList.remove('active');
+      });
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const target = document.getElementById(btn.dataset.target);
+      target.classList.add('active');
+      loadVideosInSection(target);
+      window.scrollTo({
+        top: document.querySelector('.nav').offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  const initial = document.querySelector('.section.active');
+  if(initial) loadVideosInSection(initial);
+
+  const topBtn = document.getElementById('topBtn');
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 400) topBtn.classList.add('show');
+    else topBtn.classList.remove('show');
+  });
+  topBtn.addEventListener('click', () => {
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+</script>
+
+<script>
+  function trackEvent(name, params){
+    if(typeof gtag === 'function') gtag('event', name, params);
+  }
+  document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('.btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        trackEvent('button_click', {
+          button_name: btn.textContent.trim(),
+          button_type: btn.getAttribute('target') === '_blank' ? 'external_link' : 'internal_link',
+          link_url: btn.getAttribute('href') || '',
+          page_location: window.location.pathname
+        });
+      });
+    });
+    document.querySelectorAll('.nav-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        trackEvent('section_click', {
+          section_name: btn.textContent.trim(),
+          section_id: btn.getAttribute('data-target') || '',
+          page_location: window.location.pathname
+        });
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
